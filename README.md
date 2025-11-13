@@ -5,17 +5,17 @@ This project implements a **Logistic Regression** model to predict whether a cli
 
 ## Dataset Overview
 
-- **Filename:** `Bank_data.csv` 
+- **Filename:** Bank_data.csv 
 
 | Column Name     | Type    | Description |
 |-----------------|---------|-------------|
-| `interest_rate` | float   | Interest rate associated with the customer |
-| `credit`        | float   | Customer credit score or credit-related metric |
-| `march`         | float   | Contact indicator during March |
-| `may`           | float   | Contact indicator during May |
-| `previous`      | float   | Number of previous contacts made before this campaign |
-| `duration`      | float   | Duration of the last contact in seconds |
-| `y`             | object  | Target variable: `"yes"` if the customer subscribed, `"no"` otherwise |
+| interest_rate | float   | Interest rate associated with the customer |
+| credit        | float   | Customer credit score or credit-related metric |
+| march         | float   | Contact indicator during March |
+| may           | float   | Contact indicator during May |
+| previous      | float   | Number of previous contacts made before this campaign |
+| duration      | float   | Duration of the last contact in seconds |
+| y            | object  | Target variable: `yes` if the customer subscribed, `no` otherwise |
 
 
 ##  Objective
@@ -26,7 +26,7 @@ The goal is to build a **binary classification model** using Logistic Regression
 ## Project Steps
 
 1. **Data Loading & Cleaning**
-   - Loaded data from `Bank_data.csv`
+   - Loaded data from Bank_data.csv
    - Checked for missing values and data consistency
 
 2. **Exploratory Data Analysis (EDA)**
@@ -34,11 +34,11 @@ The goal is to build a **binary classification model** using Logistic Regression
    
 
 3. **Feature Engineering**
-   - Converted categorical variable `y` into numeric (0 = no, 1 = yes)
+   - Converted categorical variable y into numeric (0 = no, 1 = yes)
    - Scaled numeric features for model stability
 
 4. **Model Building**
-   - Implemented **Logistic Regression** using `statsmodels` and `sklearn`
+   - Implemented **Logistic Regression** using statsmodels and sklearn
    - Trained and validated the model on the dataset
 
 5. **Model Evaluation**
